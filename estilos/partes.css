@@ -1,0 +1,355 @@
+div.tudo {
+	display: flex;
+}
+section#left {
+    background-color: var(--cor10);
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0 0 5px #ddd;
+    padding: 2% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    z-index: 10;
+}
+
+section#left div.cima div.logo {
+    margin: 0 0 50px 0;
+}
+section#left div.cima div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section#left div.cima div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--cor1);
+}
+section#left div.cima div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#left div.cima div.logo a span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+section#left div.cima nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+section#left div.cima nav ul li a,
+section#left div.baixo ul li a {
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+    gap: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: .2s;
+    font-size: 18px;
+}
+
+section#left div.cima nav ul li a.ativo,
+section#left div.cima nav ul li a:hover {
+    background-color: var(--cor2);
+    color: #fff;
+}
+
+section#right {
+    margin-left: 20%;
+    width: 100%;
+}
+
+section#right header {
+    box-shadow: 0 0 5px #cdc;
+    width: 80%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+}
+
+section#right header h2 a{
+    font-size: 25px;
+    color: var(--cor5);
+}
+
+section#right header div.logo {
+    display: none;
+}
+section#right header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section#right header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--cor1);
+}
+section#right header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#right header div.logo a span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+section#right header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section#right header div.itens a#btnPesq,
+section#right header div.itens button#btnTema {
+    font-size: 28px;
+    height: 50px;
+    width: 50px;
+    padding: 5px ;
+    border: 2px solid var(--cor1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--cor5);
+}
+section#right header div.itens div.person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section#right header div.itens div.person div.imagem {
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--cor1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section#right header div.itens div.person div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#right header div.itens button#btnMenu{
+    height: 50px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    background-color: transparent;
+    display: none;
+}
+section#right header div.itens button#btnMenu span.linha{
+    height: 4px;
+    width: 100%;
+    background-color: var(--cor5);
+    display: block;
+    margin: 6px auto;
+    position: relative;
+    transform-origin: center;
+}
+section#right header div.itens button.ativar span.linha:nth-child(2){
+    visibility: hidden;
+}
+section#right header div.itens button.ativar span.linha:nth-child(1){
+    transform: translateY(9px) rotate(-42deg);
+    transition: 0.2s;
+}
+section#right header div.itens button.ativar span.linha:nth-child(3){
+    transform: translateY(-11px) rotate(42deg);
+    transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+    section#left {
+        width: 50%;
+        z-index: 10;
+        left: -100%;
+        transition: 0.3s ease-in-out;
+    }
+    
+    section#left.abrir {
+        left: 0%;
+    }
+
+    section#right {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    section#right header {
+        width: 100%;
+    }
+    
+    section#right header h2 {
+        display: none;
+    }
+    
+    section#right header div.logo {
+        display: block;
+    }
+    
+    section#right header div.itens button#btnMenu{
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    section#right header div.logo a span,
+    section#right header div.itens div.person div.info,
+    section#right header div.itens div.person div.btn {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    section#left {
+        width: 60%;
+    }
+    section#right header div.logo div.imagem {
+        height: 40px;
+        width: 40px;
+    }
+    
+    section#left div.cima div.logo div.imagem {
+        height: 45px;
+        width: 45px;
+    }
+    
+    section#left div.cima div.logo a span {
+        font-size: 18px;
+    }
+    section#right header div.itens a#btnPesq,
+    section#right header div.itens button#btnTema,
+    section#right header div.itens div.person div.imagem{
+        font-size: 25px;
+        height: 45px;
+        width: 45px;
+    }
+}
+
+section#right div#listaSessoes {
+    margin: 100px 0 0 0;
+}
+
+section#right div#listaSessoes section#inicio {
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+/*<!--------------------Início do footer------------------>*/
+footer {
+    width: 85%;
+	background-color: var(--cor5);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
+	padding: 50px 0px 0px 0px;
+    transition: all 0.3s ease-in-out;
+}
+footer#footerInicio{
+	width: 100%;
+}
+footer section {
+	width: 24%;
+	color: #fff;
+	padding: 5px;
+}
+footer section h2 {
+	font-size: 22px;
+	margin: 10px 0;
+}
+footer section p,
+footer section a {
+	font-size: 17px;
+	margin: 5px 0;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	text-wrap: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+footer section#logo {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+footer section#logo img {
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+	background-color: #FFF;
+	border-radius: 50%;
+}
+footer section#redes {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--cor1);
+	padding: 10px 15px;
+}
+footer section#copy {
+	width: 100%;
+	text-align: center;
+	background-color: var(--cor1);
+	margin: 10px 0 0 0;
+	padding: 20px 0 20px 0;
+}
+
+footer section#redes div.rede {
+	display: flex;
+	padding: 10px;
+}
+
+@media (max-width: 800px) {
+	footer {
+        width: 100%;
+    }
+	footer section {
+		width: 30%;
+	}
+	footer section#logo,
+	footer section#copy{
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	footer section {
+		width: 95%;
+	}
+	footer section#logo,
+	footer section#copy {
+		width: 100%;
+	}
+	footer section#copy{
+		font-size: 15px;
+	}
+}

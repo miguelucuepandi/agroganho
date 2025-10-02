@@ -1,0 +1,67 @@
+
+/AgroLink
+    |-- /estilos
+    |-- /scripts
+    |-- /fontes
+    |-- /imagens
+    |-- /videos
+    |-- /estilos
+    |-- /modelos
+        |-- usuario.php
+        |-- produto.php
+        |-- fazenda.php
+        
+    |-- /usuario
+        |-- entrar.php
+            |-- Formulário de Login com opções de continuar com o google e Facebook 
+            |-- Opção de recuperar a senha com confirmação no email
+            |-- Formulário de cadastro com opções de continuar com o Google e Facebook 
+            
+        |-- sair.php
+        |-- perfil.php
+            |-- Para usuário apenas informações básicas 
+            |-- Para fazendeiro terá os dados dele, lista de suas fazendas e opção de adicionar nova fazenda que irá para a página(../fazenda/adicionar.php)
+        
+    |-- /produto
+        |-- index.php => Listagem de todos eos produtos e filtros 
+        |-- detalhes.php
+        |-- adicionar.php
+            |-- Nome
+            |-- Categoria 
+            |-- Foto principal e outras fotos
+            |-- Época de disponibilidade, ex: janeiro, fevereiro, março 
+        
+    |-- /fazenda
+        |-- index.php => Lista de todas as fazendas do sistema
+        |-- detalhes.php
+        |-- adicionar.php
+            |-- Nome
+            |-- Localização 
+                |-- Provincia
+                |-- Município 
+                |-- Ponto no mapa
+                
+            |-- Contactos
+                |-- Telefone 
+                |-- Email
+                |-- WhatsApp 
+            
+            |-- Foto ou logo da fazenda e fotos das propriedades e produtos 
+            |-- Descrição,  História ou Motivação 
+            
+        |-- gerirFazenda.php
+            |-- Total de produtos 
+            |-- Total de visitas
+            |-- Gerir produtos, Irá para 
+            
+    |-- /Admin
+        |-- index.php => Com dashboard e dados da plataforma 
+        |-- usuarios.php
+        |-- produtos.php
+        |-- fazendas.php
+        |-- categorias.php
+        
+    |-- /contacto
+        |-- index.php => Pagina de sobre nos
+        
+    |-- index.php => Página inicial: listagem de produtos, fazendas, testemunhos, etc
