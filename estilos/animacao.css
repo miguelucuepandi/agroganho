@@ -1,0 +1,13 @@
+/*
+    Configuração de todas as animações 
+*/
+
+@keyframes crescer {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

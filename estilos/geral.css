@@ -257,6 +257,182 @@ section#right div#listaSessoes section#inicio {
     margin: 20px auto;
 }
 
+section#right div#listaSessoes section#inicio section#top {
+    background: var(--gradient1);
+    border-radius: 15px;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+section#right div#listaSessoes section#inicio section#top h1 {
+    font-size: 32px;
+}
+
+section#right div#listaSessoes section#inicio section#top p {
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+}
+
+section#right div#listaSessoes section#inicio section#top a {
+    color: var(--cor1);
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: auto;
+}
+
+section#right div#listaSessoes section#inicio section.destaque {
+    padding: 3% 0;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
+    font-size: 35px;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div p {
+    font-size: 20px;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top a {
+    color: var(--cor1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+section#right div#listaSessoes section#inicio section.destaque {
+    padding: 3% 0;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
+    font-size: 35px;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div p {
+    font-size: 20px;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top a {
+    color: var(--cor1);
+    font-size: 22px;
+    font-weight: bold;
+}
+@media (max-width: 800px) {
+    section#right div#listaSessoes section#inicio {
+        width: 97%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 700px) {
+    section#right div#listaSessoes section#inicio section.destaque {
+        padding: 3% 2%;
+    }
+    section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
+        font-size: 28px;
+    }
+    
+    section#right div#listaSessoes section#inicio section.destaque div.top div p {
+        font-size: 15px;
+    }
+    section#right div#listaSessoes section#inicio section.destaque div.top a {
+        font-size: 17px;
+    }
+}
+
+
+/*
+    Configuração do card - Modelo 1
+*/
+
+.listaCardModelo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 50px 0 0 0;
+    padding: 10px;
+    width: 98%;
+}
+
+.cardModelo1 {
+    animation: crescer 0.5s ease-in-out forwards;
+    width: 95%;
+    max-width: 360px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.cardModelo1 div.imagem {
+    width: 100%;
+    height: 220px;
+}
+
+.cardModelo1 div.imagem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardModelo1 div.informacoes {
+    padding: 20px;
+}
+
+.cardModelo1 div.informacoes h2{
+    font-size: 25px;
+}
+
+.cardModelo1 div.informacoes p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+.cardModelo1 div.informacoes p a {
+    color: #333;
+}
+
+.cardModelo1 div.botoes {
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.cardModelo1 div.botoes a {
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .cardModelo1 {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 750px) {
+    .cardModelo1 {
+        max-width: 400px;
+    }
+}
+
+
 
 /*<!--------------------Início do footer------------------>*/
 footer {
@@ -353,3 +529,4 @@ footer section#redes div.rede {
 		font-size: 15px;
 	}
 }
+
