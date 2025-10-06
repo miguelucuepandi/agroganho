@@ -77,3 +77,65 @@ section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModel
         max-width: 650px;
     }
 }
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 {
+    position: relative;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.imagem{
+    height: 200px;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.informacoes h2 {
+    margin: 10px 0 12px 0;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.informacoes div.dados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.informacoes div.dados div.icon {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.informacoes div.dados div.info h3 {
+    font-size: 15px;
+} 
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+} 
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.data {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--cor13);
+    padding: 10px;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.data p.dia {
+    color: var(--cor1);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.tipo p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--cor1);
+    padding: 7px 20px;
+    border-radius: 10px;
+}

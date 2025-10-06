@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    /* Cores Principais - Verde */
+    --cor1: #2d874e;  /* Verde principal */
+    --cor2: #48bb78;  /* Verde claro/secundário */
+    --cor3: #f0fdf4;  /* Verde muito claro (fundo) */
+    --cor4: #dcfce7;  /* Verde pastel */
+    
+    /* Cores de Texto */
+    --cor5: #2d3748;  /* Texto escuro principal */
+    --cor6: #4a5568;  /* Texto médio */
+    --cor7: #718096;  /* Texto claro/secundário */
+    --cor8: #cbd5e0;  /* Texto muito claro (footer) */
+    
+    /* Cores de Fundo */
+    --cor9: #f5f7fa;  /* Fundo geral da página */
+    --cor10: #ffffff; /* Branco puro */
+    --cor11: #f7fafc;  /* Branco acinzentado */
+    --cor12: #edf2f7;  /* Cinza muito claro */
+    
+    /* Cores de Borda */
+    --cor13: #e2e8f0; /* Borda cinza claro */
+    
+    /* Cor de Destaque/Alerta */
+    --cor14: #e53e3e; /* Vermelho (badge notificação) */
+    
+    /* Gradientes (componentes) */
+    --gradient1: linear-gradient(135deg, #2d874e 0%, #48bb78 100%);
+    --gradient2: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+body {
+    background-color: var(--cor12);
+}
+
+div.tudo {
+  flex-direction: column;
+}
+
+header {
+    box-shadow: 0 0 5px #cdc;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+}
+
+  header h2 a{
+    font-size: 20px;
+    color: var(--cor5);
+}
+
+  header div.logo {
+    display: block;
+}
+  header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--cor1);
+}
+  header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+  header div.logo a span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+  header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div.itens a#btnVoltar {
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--cor1);
+}
+
+main {
+  margin: 80px 0 10px 0;
+}
+
+main section {
+  width: 97%;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+main section#top {
+  background: var(--gradient1);
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+
+main section#top div.left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main section#top div.left div.imagem {
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main section#top div.left div.imagem img {
+  height: 100%;
+  width: 100%;
+}
+
+main section#top div.left div.informacoes {
+  color: #fff;
+}
+
+main section#top div.left div.informacoes h3{
+  margin: 10px 0;
+}
+
+main section#top div.left div.informacoes div.dados {
+  display: flex;
+  gap: 5px;
+}
+
+main section#top div.left div.informacoes div.dados {
+  display: flex;
+  gap: 20px;
+  margin: 50px 0 10px 0;
+}
+
+main section#top div.left div.informacoes div.dados div.item{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main section#top div.left div.informacoes div.dados div.item strong {
+  font-size: 30px;
+}
+
+main section#ctas {
+  display: flex;
+  justify-content: space-around;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+main section#ctas a.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 12px;
+  border: 1px solid var(--cor1);
+  width: 24%;
+}
+
+main section#ctas a.item div.icon {
+  background-color: var(--cor4);
+  font-size: 60px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+main section#ctas a.item div.info h3 {
+  color: #000;
+  font-size: 20px;
+}
+
+main section#ctas a.item div.info p {
+  color: var(--cor5);
+  margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+  main section#ctas a.item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  main section#ctas a.item {
+    width: 100%;
+  }
+}
