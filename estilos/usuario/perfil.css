@@ -222,11 +222,11 @@ main section#outrasSessoes {
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-  position: relative;
 }
 
 main section#outrasSessoes section#left {
   position: sticky;
+  top: 73px;
   display: block;
   z-index: 1;
   width: 30%;
@@ -234,6 +234,7 @@ main section#outrasSessoes section#left {
   border-radius: 15px;
   padding: 20px 15px;
   height: auto;
+  background-color: #fff;
 }
 
 main section#outrasSessoes section#left h2 {
@@ -244,8 +245,6 @@ main section#outrasSessoes section#left h2 {
 
 main section#outrasSessoes section#left div.dadosP {
   margin: 20px 0;
-  position: sticky;
-	top: 0;
 }
 
 main section#outrasSessoes section#left div.dadosP div.dado {
@@ -288,6 +287,8 @@ main section#outrasSessoes section#right section#filtro {
 }
 
 main section#outrasSessoes section#right section#filtro aside.botoes {
+    position: sticky;
+    top: 73px;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
@@ -307,6 +308,7 @@ main section#outrasSessoes section#right section#filtro aside.botoes button {
     border-radius: 8px;
     transition: 0.2s;
     background-color: transparent;
+    width: 24%;
 }
 
 main section#outrasSessoes section#right section#filtro aside.botoes button:hover,
@@ -351,6 +353,48 @@ main section#outrasSessoes section#right section#filtro aside.itens div.cima a {
 main section#outrasSessoes section#right section#filtro aside.itens div.baixo {
   padding: 30px 0;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  main section#outrasSessoes section#left {
+    width: 45%;
+  }
+  main section#outrasSessoes section#right {
+    width: 52%;
+  }
+  main section#outrasSessoes section#right section#filtro aside.itens div.cima h2 {
+    font-size: 20px;
+  }
+  
+  main section#outrasSessoes section#right section#filtro aside.itens div.cima a {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  main section#outrasSessoes section#right section#filtro aside.itens div.baixo {
+    justify-content: center;
+  }
+  main section#outrasSessoes section#right section#filtro aside.botoes {
+      box-shadow: 0 0 10px #ccc;
+      justify-content: space-around;
+    }
+  main section#outrasSessoes section#right section#filtro aside.botoes button {
+      padding: 10px;
+      font-size: 16px;
+      width: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+  main section#outrasSessoes {
+    flex-wrap: wrap;
+  }
+  main section#outrasSessoes section#left {
+    width: 100%;
+    position: initial;
+  }
+  main section#outrasSessoes section#right {
+    width: 100%;
+  }
 }
