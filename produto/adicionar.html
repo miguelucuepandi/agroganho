@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/produto/adicionar.css">
+    <title>AgroGanho</title>
+</head>
+<body>
+    <div class="tudo">
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="imagem">
+                        <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo" />
+                    </div>
+                    <span>AgroGanho</span>
+                </a>
+            </div>
+            <div class="itens">
+                <a id="btnVoltar" href="../usuario/perfil.html"><i class="bi-arrow-left "></i> Voltar ao perfil</a>
+            </div>
+        </header>
+        <main>
+            <section id="top">
+                <div class="icon">
+                    <i class="bi-house"></i>
+                </div>
+                <h1>Adicionar Produto</h1>
+                <p>Cadastre seu produto na plataforma.</p>
+            </section>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <div class="dados">
+                    <h2>Informações básicas</h2>
+                    <p>Forneça as informações exenciais sobre o produto </p>
+                </div>
+                <div class="listaInputs">
+                    <div class="item">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome do estabelecimento" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Tipo de produto</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" selected >Tuberculos</option>
+                            <option value="" >Hortaliças</option>
+                            <option value="" >Sementes</option>
+                            <option value="" >Grãos e seriais</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="nome">Origem do produto</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" selected >Origem não especificada</option>
+                            <option value="" >Fazenda Ucuepandi</option>
+                            <option value="" >Loja VendaMais</option>
+                            <option value="" >Cooperativa Todos ganham</option>
+                        </select>
+                    </div>
+                    <div class="itemFoto">
+            			<label for="foto" id="previewContainer">
+            				 <i class="bi bi-camera"></i>
+            			</label>
+                        <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
+            		</div>
+                    <div class="item">
+                        <button type="submit" id="btnCadastro">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer id="footerInicio">
+            <section id="logo">
+                <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo">
+                <h2>AgroGanho</h2>
+            </section>
+            <section id="linksU">
+                <h2>Links úteis</h2>
+                <a href="#">Fazendas</a>
+                <a href="#">Produtos</a>
+                <a href="#">Dicas</a>
+                <a href="#">Contactos</a>
+            </section>
+            <section id="legal">
+                <h2>Legal</h2>
+                <a href="#">Política de cookies</a>
+                <a href="#">Política de privacidade </a>
+                <a href="#">Termos e condições</a>
+                <a href="#">FAQs</a>
+            </section>
+            <section id="contacto">
+                <h2>Contactos</h2>
+                <a href="tel:921270829"><i class="bi bi-telephone-fill"></i> 921 270 829</a>
+                <a href="tel:921270929"><i class="bi bi-telephone-fill"></i> 921 270 829</a>
+                <a href="mailto:plusone.atendimento@gmail.com?subject=AgroLink"><i class="bi bi-envelope-fill"></i> plusone.atendimento@gmail.com</a>
+            </section>
+            <section id="copy">
+                Copyright &copy; 2025 PlusOne. Todos os direitos reservados!
+            </section>
+        </footer>
+    </div>
+    <script src="../scripts/previsualizacao.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

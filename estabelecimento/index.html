@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
     <link rel="stylesheet" href="../estilos/geral.css">
-    <link rel="stylesheet" href="../estilos/fazenda/index.css">
+    <link rel="stylesheet" href="../estilos/estabelecimento/index.css">
     <title>AgroGanho</title>
 </head>
 <body>
@@ -35,9 +35,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../fazenda/index.html" class="ativo" >
+                            <a href="#" class="ativo" >
                                 <i class="bi-house"></i>
-                                <span>Fazendas</span>
+                                <span>Estabelecimento</span>
                             </a>
                         </li>
                         <li>
@@ -71,7 +71,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bi-question"></i>
+                            <i class="bi-question-circle"></i>
                             <span>Ajuda</span>
                         </a>
                     </li>
@@ -86,9 +86,9 @@
         </section>
         <section id="right">
             <header>
-                <h2><a href="#">Fazendas </a></h2>
+                <h2><a href="#">Estabelecimentos </a></h2>
                 <div class="logo">
-                    <a href="#">
+                    <a href="../index.html">
                         <div class="imagem">
                             <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo" />
                         </div>
@@ -131,8 +131,8 @@
                     <section id="fazendasEmDestaque" class="destaque">
                         <div class="top">
                             <div>
-                                <h1>Fazendas em destaque</h1>
-                                <p>Explore as Fazendas mais procuradas em todo o país! </p>
+                                <h1>Estabelecimentos em destaque</h1>
+                                <p>Explore as estabelecimentos mais procuradas em todo o país! </p>
                             </div>
                             <a href="#">Ver todos <i class="bi-arrow-right "></i></a>
                         </div>
@@ -200,199 +200,51 @@
                         </div>
                     </section>
                     <section id="filtro">
-                        <h2>Fazendas da Nossa Plataforma</h2>
+                        <h2>Os estabelecimentos da Nossa Plataforma</h2>
                         <p>
-                            Aqui você encontrará as diversas fazendas localizadas nos municípios da província da Huíla.
+                            Aqui você encontrará os diversas estabelecimentos organizados pelo tipo.
                         </p>
                     
                         <aside class="botoes">
                             <button valor="todos" class="ativo">Todos</button>
-                            <button valor="lubango">Lubango</button>
-                            <button valor="chibia">Chibia</button>
-                            <button valor="matala">Matala</button>
-                            <button valor="humpata">Humpata</button>
-                            <button valor="caluquembe">Caluquembe</button>
-                            <button valor="cacula">Cacula</button>
-                            <button valor="cuvango">Cuvango</button>
-                            <button valor="quilengues">Quilengues</button>
-                            <button valor="chipindo">Chipindo</button>
-                            <button valor="caconda">Caconda</button>
-                            <button valor="chicomba">Chicomba</button>
-                            <button valor="chipindo">Chipindo</button>
-                            <button valor="gambos">Gambos (Chiange)</button>
-                            <button valor="jamba">Jamba</button>
-                            <button valor="quilengues">Quilengues</button>
-                            <button valor="caluquembe">Caluquembe</button>
+                            <button valor="Fazendas">Fazendas</button>
+                            <button valor="Lojas">Lojas</button>
+                            <button valor="Cooperativa">Cooperativa</button>
                         </aside>
                     
                         <aside class="itens listaCardModelo1">
-                            <!-- Lubango -->
-                            <div valor="lubango" class="item cardModelo1">
+                            <div valor="Fazendas" class="item cardModelo1">
                                 <div class="imagem">
                                     <a href="#">
                                         <img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Lubango" />
                                     </a>
                                 </div>
                                 <div class="informacoes">
-                                    <h2>Fazenda Agro Lubango</h2>
+                                    <h2>Fazenda AgroVerde</h2>
                                     <p><a href="#"><i class="bi-geo-alt"></i> Lubango, Huíla</a></p>
                                     <p><a href="#"><i class="bi-person"></i> Miguel Ucuepandi</a></p>
                                 </div>
                                 <div class="botoes"><a href="#">Detalhes</a></div>
                             </div>
-                    
-                            <!-- Chibia -->
-                            <div valor="chibia" class="item cardModelo1">
+                            <div valor="Lojas" class="item cardModelo1">
                                 <div class="imagem">
                                     <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Chibia" /></a>
                                 </div>
                                 <div class="informacoes">
-                                    <h2>Fazenda Verde Chibia</h2>
+                                    <h2>Loja Na BC</h2>
                                     <p><a href="#"><i class="bi-geo-alt"></i> Chibia, Huíla</a></p>
                                     <p><a href="#"><i class="bi-person"></i> João Silva</a></p>
                                 </div>
                                 <div class="botoes"><a href="#">Detalhes</a></div>
                             </div>
-                    
-                            <!-- Matala -->
-                            <div valor="matala" class="item cardModelo1">
+                            <div valor="Cooperativa" class="item cardModelo1">
                                 <div class="imagem">
                                     <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Matala" /></a>
                                 </div>
                                 <div class="informacoes">
-                                    <h2>Fazenda Rio Matala</h2>
+                                    <h2>Cooperativa Tudo junto</h2>
                                     <p><a href="#"><i class="bi-geo-alt"></i> Matala, Huíla</a></p>
                                     <p><a href="#"><i class="bi-person"></i> Ana Fernandes</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Humpata -->
-                            <div valor="humpata" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Humpata" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Serra da Humpata</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Humpata, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Carlos Domingos</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Caluquembe -->
-                            <div valor="caluquembe" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Caluquembe" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Esperança</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Caluquembe, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Pedro Manuel</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Cacula -->
-                            <div valor="cacula" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Cacula" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Boa Terra</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Cacula, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Maria José</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Cuvango -->
-                            <div valor="cuvango" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Cuvango" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda do Vale</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Cuvango, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> António Paulo</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Quilengues -->
-                            <div valor="quilengues" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Quilengues" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Horizonte</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Quilengues, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Manuel Jorge</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Chipindo -->
-                            <div valor="chipindo" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Chipindo" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Chipindo</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Chipindo, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> António Kiala</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Caconda -->
-                            <div valor="caconda" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Caconda" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Caconda</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Caconda, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Domingos José</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Chicomba -->
-                            <div valor="chicomba" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Chicomba" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Chicomba</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Chicomba, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Luís Fernando</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Gambos -->
-                            <div valor="gambos" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Gambos" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Chiange</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Gambos (Chiange), Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Sofia Mendes</a></p>
-                                </div>
-                                <div class="botoes"><a href="#">Detalhes</a></div>
-                            </div>
-                    
-                            <!-- Jamba -->
-                            <div valor="jamba" class="item cardModelo1">
-                                <div class="imagem">
-                                    <a href="#"><img src="../imagens/fazendas/foto01.jpg" alt="Fazenda em Jamba" /></a>
-                                </div>
-                                <div class="informacoes">
-                                    <h2>Fazenda Jamba</h2>
-                                    <p><a href="#"><i class="bi-geo-alt"></i> Jamba, Huíla</a></p>
-                                    <p><a href="#"><i class="bi-person"></i> Joaquim António</a></p>
                                 </div>
                                 <div class="botoes"><a href="#">Detalhes</a></div>
                             </div>
