@@ -1,6 +1,8 @@
 div.tudo {
 	display: flex;
 }
+
+
 section#left {
     background-color: var(--cor10);
     position: fixed;
@@ -131,6 +133,7 @@ section#right header div.itens button#btnTema {
     overflow: hidden;
     cursor: pointer;
     color: var(--cor5);
+    background-color: #fdfdfd;
 }
 section#right header div.itens div.person {
     display: flex;
@@ -444,6 +447,7 @@ footer {
 	gap: 5px;
 	padding: 50px 0px 0px 0px;
     transition: all 0.3s ease-in-out;
+    border-top: 2px solid #83838A;
 }
 footer#footerInicio{
 	width: 100%;
@@ -530,3 +534,44 @@ footer section#redes div.rede {
 	}
 }
 
+/*
+    Modo Dark
+*/
+
+
+body.dark,
+body.dark section#left,
+body.dark section#left div.cima nav ul li a,
+body.dark section#left div.baixo ul li a,
+body.dark section#right header,
+body.dark section#right header h2 a
+{
+    background-color: var(--cor5);
+    color: #fff;
+}
+
+body.dark section#left div.cima nav ul li a.ativo,
+body.dark section#left div.cima nav ul li a:hover {
+    background-color: var(--cor2);
+    color: #fff;
+}
+
+body.dark section#left div.cima div.logo div.imagem,
+body.dark section#right header div.itens button#btnMenu span.linha, 
+body.dark section#right header div.logo div.imagem {
+    background-color: #fff;
+}
+
+body.dark .cardModelo1 {
+    box-shadow: 0 0 8px #ccc;
+    background-color: var(--cor5);
+    color: #fff;
+}
+
+body.dark .cardModelo1 div.informacoes p a {
+    color: #fff;
+}
+
+body.dark section#right div#listaSessoes section#inicio section.destaque div.top a {
+    color: var(--cor3);
+}

@@ -62,7 +62,7 @@ section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModel
 }
 
 section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1 div.texto a {
-    color: var(--cor1);
+    color: var(--cor2);
     font-weight: bold;
 }
 
@@ -102,6 +102,7 @@ section#right div#listaSessoes section#inicio section#eventosEmDestaque div.list
     color: var(--cor5);
     border-radius: 50%;
     font-size: 22px;
+    padding: 3px 5px;
 }
 
 section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.informacoes div.dados div.info h3 {
@@ -119,7 +120,7 @@ section#right div#listaSessoes section#inicio section#eventosEmDestaque div.list
 } 
 
 section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.data {
-    background-color: #fff;
+    background-color: var(--cor3);
     border-radius: 10px;
     box-shadow: 0 0 5px var(--cor13);
     padding: 10px;
@@ -130,7 +131,9 @@ section#right div#listaSessoes section#inicio section#eventosEmDestaque div.list
     font-size: 25px;
     font-weight: 700;
 }
-
+section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.data p.mes {
+    color: var(--cor5);
+}
 section#right div#listaSessoes section#inicio section#eventosEmDestaque div.listaCardModelo1 div.cardModelo1 div.flutua div.tipo p {
     color: #fff;
     font-size: 15px;
@@ -139,3 +142,4 @@ section#right div#listaSessoes section#inicio section#eventosEmDestaque div.list
     padding: 7px 20px;
     border-radius: 10px;
 }
+
