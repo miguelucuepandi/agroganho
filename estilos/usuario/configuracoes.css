@@ -176,26 +176,44 @@ main form div.listaInputs div.item textarea {
 
 main form div.listaInputs div.itemFoto {
   text-align: center;
+  
+  gap: 10px;
 }
 
-main form div.listaInputs div.itemFoto label {
-  width: 100%;
-  max-width: 400px;
-  height: 300px;
+main form div.listaInputs div.itemFoto div.img {
+  width: 200px;
+  height: 200px;
   font-size: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
   background-color: var(--cor9);
   overflow: hidden;
   border-radius: 10px;
+  margin: 20px auto;
 }
 main form div.listaInputs div.itemFoto img {
   height: 100%;
   width: 100%;
 }
 main form div.listaInputs div.itemFoto input {
+  display: none;
+}
+
+main form div.listaInputs div.itemFoto label,
+main form div.listaInputs div.itemFoto button {
+  background-color: var(--cor1);
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+}
+
+main form div.listaInputs div.itemFoto button {
   display: none;
 }
 
@@ -209,4 +227,12 @@ main form div.listaInputs div.item button {
 
 main form div.listaInputs div.item button:hover {
   transform: scale(0.9);
+}
+
+main form a#btnEliminarPerfil {
+  color: var(--cor14);
+  font-weight: 800;
+  font-size: 20px;
+  display: block;
+  margin: 10px;
 }

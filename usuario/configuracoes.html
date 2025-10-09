@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/usuario/configuracoes.css">
+    <title>AgroGanho</title>
+</head>
+<body>
+    <div class="tudo">
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="imagem">
+                        <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo" />
+                    </div>
+                    <span>AgroGanho</span>
+                </a>
+            </div>
+            <div class="itens">
+                <a id="btnVoltar" href="./perfil.html"><i class="bi-arrow-left "></i> Voltar ao perfil</a>
+            </div>
+        </header>
+        <main>
+            <section id="top">
+                <div class="icon">
+                    <i class="bi-gear-wide-connected"></i>
+                </div>
+                <h1>Configurações</h1>
+                <p>Gerencie suas preferências, privacidade e configurações da conta..</p>
+            </section>
+            <form action="" method="post" enctype="multipart/form-data" >
+
+                <div class="dados">
+                    <h2>Informações do perfil</h2>
+                    <p>Configure as informações básicas</p>
+                </div>
+                <div class="listaInputs">
+                    <div class="itemFoto">
+                        <div class="img" for="" id="previewContainer">
+                            <i class="bi bi-camera"></i>
+                        </div>
+                        <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
+                        <button id="btnAlterarFoto">Alterar foto</button>
+                        <label for="foto">Alterar foto</label>
+                    </div>
+                    <div class="item">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Usuário</label>
+                        <input type="text" name="nome" id="nome" placeholder="Usuario" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Localização</label>
+                        <input type="text" name="nome" id="nome" placeholder="Localização" />
+                    </div>
+                    <div class="item">
+                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                    </div>
+                </div>
+            </form>
+            <form action="" method="post" enctype="multipart/form-data" >
+
+                <div class="dados">
+                    <h2>Informações de contacto</h2>
+                    <p>Configure as informações de contacto</p>
+                </div>
+                <div class="listaInputs">
+                    <div class="item">
+                        <label for="telefone">Telefome</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Telefone" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Email</label>
+                        <input type="text" name="nome" id="nome" placeholder="Email" />
+                    </div>
+                    
+                    <div class="item">
+                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                    </div>
+                </div>
+            </form>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="dados">
+                    <h2>Informações do Segurança</h2>
+                    <p>Configure as informações de segurança</p>
+                </div>
+                <div class="listaInputs">
+                    <div class="item">
+                        <label for="nome">Senha actual</label>
+                        <input type="text" name="nome" id="nome" placeholder="Senha actual" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Nova senha</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nova senha" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Confirme a senha</label>
+                        <input type="text" name="nome" id="nome" placeholder="Confirme a senha" />
+                    </div>
+                    <div class="item">
+                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                    </div>
+                </div>
+                <a id="btnEliminarPerfil" href="#">Eliminar Perfil</a>
+            </form>
+            
+        </main>
+        <footer id="footerInicio">
+            <section id="logo">
+                <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo">
+                <h2>AgroGanho</h2>
+            </section>
+            <section id="linksU">
+                <h2>Links úteis</h2>
+                <a href="#">Fazendas</a>
+                <a href="#">Produtos</a>
+                <a href="#">Dicas</a>
+                <a href="#">Contactos</a>
+            </section>
+            <section id="legal">
+                <h2>Legal</h2>
+                <a href="#">Política de cookies</a>
+                <a href="#">Política de privacidade </a>
+                <a href="#">Termos e condições</a>
+                <a href="#">FAQs</a>
+            </section>
+            <section id="contacto">
+                <h2>Contactos</h2>
+                <a href="tel:921270829"><i class="bi bi-telephone-fill"></i> 921 270 829</a>
+                <a href="tel:921270929"><i class="bi bi-telephone-fill"></i> 921 270 829</a>
+                <a href="mailto:plusone.atendimento@gmail.com?subject=AgroLink"><i class="bi bi-envelope-fill"></i> plusone.atendimento@gmail.com</a>
+            </section>
+            <section id="copy">
+                Copyright &copy; 2025 PlusOne. Todos os direitos reservados!
+            </section>
+        </footer>
+    </div>
+    <script src="../scripts/previsualizacao.js"></script>
+    <script>
+        const btnEliminarPerfil = document.querySelector("#btnEliminarPerfil") 
+        
+        btnEliminarPerfil.addEventListener("click", (e) => {
+            e.preventDefault()
+            let resp = window.confirm("Comfirme a eliminação da conta")
+            if(resp) {
+                window.location = "../index.html"
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

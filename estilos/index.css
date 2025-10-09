@@ -58,7 +58,11 @@ section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModel
 }
 
 section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1 div.texto p {
-    margin: 20px 0;
+    margin: 10px 0;
+    height: auto;
+    max-height: 110px;
+    min-height: 110px;
+    overflow: hidden;
 }
 
 section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1 div.texto a {

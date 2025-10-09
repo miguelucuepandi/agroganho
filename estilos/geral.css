@@ -28,9 +28,8 @@ section#left div.cima div.logo div.imagem {
     padding: 5px;
     border-radius: 5px;
     overflow: hidden;
-    height: 50px;
-    width: 50px;
-    border: 2px solid var(--cor1);
+    height: 60px;
+    width: 60px;
 }
 section#left div.cima div.logo div.imagem img {
     height: 100%;
@@ -46,6 +45,7 @@ section#left div.cima div.logo a span {
 section#left div.cima nav ul {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 section#left div.cima nav ul li a,
@@ -100,9 +100,8 @@ section#right header div.logo div.imagem {
     padding: 5px;
     border-radius: 5px;
     overflow: hidden;
-    height: 50px;
-    width: 50px;
-    border: 2px solid var(--cor1);
+    height: 60px;
+    width: 60px;
 }
 section#right header div.logo div.imagem img {
     height: 100%;
@@ -123,32 +122,34 @@ section#right header div.itens {
 }
 
 section#right header div.itens a#btnPesq,
-section#right header div.itens button#btnTema {
+section#right header div.itens button#btnTema,
+section#right header div.itens div.person div.imagem{
     font-size: 28px;
-    height: 50px;
-    width: 50px;
-    padding: 5px ;
-    border: 2px solid var(--cor1);
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    border: none;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    color: var(--cor5);
+    color: var(--cor1);
     background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section#right header div.itens div.person {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-section#right header div.itens div.person div.imagem {
-    height: 45px;
-    width: 45px;
-    border: 2px solid var(--cor1);
-    border-radius: 8px;
-    overflow: hidden;
+
+section#right header div.itens div.person div.imagem a {
+    height: 100%;
+    width: 100%;
 }
 
-section#right header div.itens div.person div.imagem img {
+section#right header div.itens div.person div.imagem a img {
     height: 100%;
     width: 100%;
 }
@@ -229,19 +230,17 @@ section#right header div.itens button.ativar span.linha:nth-child(3){
     section#left {
         width: 60%;
     }
-    section#right header div.logo div.imagem {
-        height: 40px;
-        width: 40px;
-    }
-    
-    section#left div.cima div.logo div.imagem {
-        height: 45px;
-        width: 45px;
-    }
     
     section#left div.cima div.logo a span {
-        font-size: 18px;
+        font-size: 5px;
+        color: red;
     }
+    section#left div.cima nav ul li a,
+    section#left div.baixo ul li a {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
     section#right header div.itens a#btnPesq,
     section#right header div.itens button#btnTema,
     section#right header div.itens div.person div.imagem{
@@ -310,28 +309,7 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
     font-weight: bold;
 }
 
-section#right div#listaSessoes section#inicio section.destaque {
-    padding: 3% 0;
-}
 
-section#right div#listaSessoes section#inicio section.destaque div.top{
-    display: flex;
-    justify-content: space-between;
-}
-
-section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
-    font-size: 35px;
-}
-
-section#right div#listaSessoes section#inicio section.destaque div.top div p {
-    font-size: 20px;
-}
-
-section#right div#listaSessoes section#inicio section.destaque div.top a {
-    color: var(--cor1);
-    font-size: 22px;
-    font-weight: bold;
-}
 @media (max-width: 800px) {
     section#right div#listaSessoes section#inicio {
         width: 97%;
@@ -367,13 +345,13 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
     flex-wrap: wrap;
     gap: 15px;
     margin: 50px 0 0 0;
-    padding: 10px;
-    width: 98%;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .cardModelo1 {
     animation: crescer 0.5s ease-in-out forwards;
-    width: 95%;
+    width: 100%;
     max-width: 360px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
@@ -431,7 +409,14 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
 
 @media (max-width: 750px) {
     .cardModelo1 {
-        max-width: 400px;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardModelo1 div.botoes a {
+        padding: 8px 20px;
+        font-size: 15px;
     }
 }
 

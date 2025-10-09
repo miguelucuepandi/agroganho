@@ -84,7 +84,7 @@ header {
 }
 
   header div.logo a span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--cor1);
 }
@@ -97,7 +97,7 @@ header {
 }
 
 header div.itens a#btnVoltar {
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 10px;
     border-radius: 8px;
     color: #fff;

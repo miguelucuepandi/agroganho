@@ -84,7 +84,7 @@ header {
 }
 
   header div.logo a span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--cor1);
 }
@@ -97,7 +97,7 @@ header {
 }
 
 header div.itens a#btnVoltar {
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 10px;
     border-radius: 8px;
     color: #fff;
@@ -212,6 +212,9 @@ main section#ctas a.item div.info p {
 }
 
 @media (max-width: 600px) {
+  main section#top div.left {
+    justify-content: center;
+  }
   main section#ctas a.item {
     width: 100%;
   }
@@ -395,6 +398,12 @@ main section#outrasSessoes section#right section#filtro aside.itens div.baixo {
     position: initial;
   }
   main section#outrasSessoes section#right {
-    width: 100%;
+    width: 100%!important;
+  }
+  main section#outrasSessoes section#right section#filtro aside.botoes {
+    top: 70px;
+  }
+  main section#outrasSessoes section#right section#filtro aside.itens {
+    padding: 5px;
   }
 }
