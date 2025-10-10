@@ -1,3 +1,50 @@
+/*
+    Estilo e configuração Geral de todas as paginas
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    /* Cores Principais - Verde */
+    --cor1: #2d874e;  /* Verde principal */
+    --cor2: #48bb78;  /* Verde claro/secundário */
+    --cor3: #f0fdf4;  /* Verde muito claro (fundo) */
+    --cor4: #dcfce7;  /* Verde pastel */
+    
+    /* Cores de Texto */
+    --cor5: #2d3748;  /* Texto escuro principal */
+    --cor6: #4a5568;  /* Texto médio */
+    --cor7: #718096;  /* Texto claro/secundário */
+    --cor8: #cbd5e0;  /* Texto muito claro (footer) */
+    
+    /* Cores de Fundo */
+    --cor9: #f5f7fa;  /* Fundo geral da página */
+    --cor10: #ffffff; /* Branco puro */
+    --cor11: #f7fafc;  /* Branco acinzentado */
+    --cor12: #edf2f7;  /* Cinza muito claro */
+    
+    /* Cores de Borda */
+    --cor13: #e2e8f0; /* Borda cinza claro */
+    
+    /* Cor de Destaque/Alerta */
+    --cor14: #e53e3e; /* Vermelho (badge notificação) */
+    
+    /* Gradientes (componentes) */
+    --gradient1: linear-gradient(135deg, #2d874e 0%, #48bb78 100%);
+    --gradient2: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+body {
+    background-color: var(--cor12);
+}
+
 div.tudo {
 	display: flex;
 }
@@ -420,6 +467,170 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
     }
 }
 
+/*
+    Card de dicas
+*/
+
+.listaCardModelo1.listaDica {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.listaCardModelo1.listaDica .cardModelo1.dica {
+    padding: 15px;
+    box-shadow: none;
+    border-left: 3px solid var(--cor1);
+    max-width: 450px;
+}
+
+.listaCardModelo1.listaDica .cardModelo1 h2 {
+    margin: 10px 0;
+}
+
+.listaCardModelo1.listaDica .cardModelo1.dica div.texto p {
+    margin: 10px 0;
+    height: auto;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.listaCardModelo1.listaDica .cardModelo1.dica.limita div.texto p {
+    height: 150px;
+}
+
+.listaCardModelo1.listaDica .cardModelo1 div.texto a {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .listaCardModelo1.listaDica .cardModelo1 {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 750px) {
+    .listaCardModelo1.listaDica .cardModelo1 {
+        max-width: 650px;
+    }
+}
+
+/*
+    Card de eventos
+*/
+
+.listaCardModelo1.listaEvento div.cardModelo1 {
+    position: relative;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.imagem {
+    height: 200px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes h2 {
+    margin: 10px 0 12px 0;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.icon {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 3px 5px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.info h3 {
+    font-size: 15px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data {
+    background-color: var(--cor3);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--cor13);
+    padding: 10px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.dia {
+    color: var(--cor1);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.mes {
+    color: var(--cor5);
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.tipo p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--cor1);
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+/*
+    Filtro
+*/
+
+section#right div#listaSessoes section#inicio section#filtro {
+    text-align: center;
+    padding-top: 50px;
+    color: var(--cor5);
+}
+
+section#right div#listaSessoes section#inicio section#filtro > h2 {
+    color: var(--cor5);
+}
+
+section#right div#listaSessoes section#inicio section#filtro > p {
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes {
+    width: 98%;
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button {
+    padding: 7px 15px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button:hover,
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button.ativo {
+    background-color: var(--cor1);
+    color: #fff;
+    transform: scale(1.01);
+}
+
 
 
 /*<!--------------------Início do footer------------------>*/
@@ -532,13 +743,13 @@ body.dark section#right header,
 body.dark section#right header h2 a
 {
     background-color: var(--cor5);
-    color: #fff;
+    color: var(--cor11);
 }
 
 body.dark section#left div.cima nav ul li a.ativo,
 body.dark section#left div.cima nav ul li a:hover {
     background-color: var(--cor2);
-    color: #fff;
+    color: var(--cor11);
 }
 
 body.dark section#left div.cima div.logo div.imagem,
@@ -550,13 +761,22 @@ body.dark section#right header div.logo div.imagem {
 body.dark .cardModelo1 {
     box-shadow: 0 0 8px #ccc;
     background-color: var(--cor5);
-    color: #fff;
+    color: var(--cor11);
 }
 
-body.dark .cardModelo1 div.informacoes p a {
-    color: #fff;
+body.dark section#left div.cima div.logo a span,
+body.dark section#right header div.logo a span,
+body.dark .cardModelo1 div.informacoes p a,
+body.dark section#right div#listaSessoes section#inicio section.destaque div.top a,
+body.dark section#right div#listaSessoes section#inicio section#filtro > h2,
+body.dark section#right div#listaSessoes section#inicio section#filtro > p {
+    color: var(--cor11);
 }
 
-body.dark section#right div#listaSessoes section#inicio section.destaque div.top a {
-    color: var(--cor3);
+body.dark .listaCardModelo1.listaDica .cardModelo1.dica {
+    border-color: var(--cor2);
+}
+
+body.dark .listaCardModelo1.listaDica .cardModelo1 div.texto a {
+    color: var(--cor2);
 }
