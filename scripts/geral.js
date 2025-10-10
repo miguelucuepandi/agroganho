@@ -18,5 +18,7 @@ lerMais.map((btnLerMais) => {
     btnLerMais.addEventListener("click", (evt) => {
         evt.preventDefault()
         limitarTexto(btnLerMais)
+        let textLermais = btnLerMais.textContent == "Ler mais" ? "Ler menos" : "Ler mais"
+        btnLerMais.innerHTML = textLermais
     })
 })

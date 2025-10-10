@@ -10,4 +10,15 @@ btnMenu.addEventListener('click', () => {
 
 btnTema.addEventListener('click', () => {
     body.classList.toggle('dark');
+    let tema = (localStorage.tema) ? localStorage.tema : ""
+    localStorage.tema = tema
 })
+
+window.onload = () => {
+    if (localStorage.tema == "dark") {
+        body.classList.add("dark")
+    }
+    else {
+        body.classList.remove("dark")
+    }
+}

@@ -44,9 +44,10 @@ body {
 
 section#right div#listaSessoes section#inicio section#dicasEmDestaque .listaCardModelo1 {
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
-section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1{
+section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1.dica{
     padding: 15px;
     box-shadow: none;
     border-left: 3px solid var(--cor1);
@@ -57,12 +58,15 @@ section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModel
     margin: 10px 0;
 }
 
-section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1 div.texto p {
+section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1.dica div.texto p {
     margin: 10px 0;
     height: auto;
-    max-height: 110px;
-    min-height: 110px;
+    min-height: 150px;
     overflow: hidden;
+}
+
+section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1.dica.limita div.texto p {
+    height: 150px;
 }
 
 section#right div#listaSessoes section#inicio section#dicasEmDestaque .cardModelo1 div.texto a {
