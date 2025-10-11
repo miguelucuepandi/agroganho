@@ -29,6 +29,13 @@ lerMais.map((btnLerMais) => {
 })
 //  ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== 
 
+/*
+    Loading
+*/
+
+let caixaLoaging = document.querySelector("#Loading");
+let siteTodo = document.querySelector("div.tudo")
+
 window.onload = () => {
     if (localStorage.tema == "dark") {
         body.classList.add("dark")
@@ -37,3 +44,7 @@ window.onload = () => {
         body.classList.remove("dark")
     }
 }
+setTimeout(() => {
+    caixaLoaging.style.display = "none"
+    siteTodo.style.display = "flex"
+}, 1500)

@@ -263,6 +263,7 @@ main section#outrasSessoes section#right section#filtro aside.botoes {
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
+    z-index: 1;
 }
 
 main section#outrasSessoes section#right section#filtro aside.botoes button {
