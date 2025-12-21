@@ -28,7 +28,7 @@ function mostrarItem(valorBtn) {
     })
 }
 
-window.onload = () => {
+function botoesIniciais() {
     if (localStorage.valorBtn) {
         removerAtivoBtn()
         botoes.forEach(botao => {
@@ -54,3 +54,4 @@ botoes.forEach(botao => {
     })
 })
 
+botoesIniciais()

@@ -1,17 +1,53 @@
+Extrututa de pastas e arquivos da AgroGanho
 
-/AgroLink
+/AgroGanho 
+    |-- /Admin
+        |-- usuarios.php
+        |-- produtos.php
+        |-- estabelecimento.php
+        |-- evento.php
+        |-- dicas.php
+        |-- index.php => Com dashboard e dados da plataforma 
+        
+    |-- /dica
+        |-- adicionar.php
+        |-- index.php
+    
+    |-- /estabelecimento
+        |-- adicionar.php
+        |-- detalhe.php
+        |-- index.php
+        
     |-- /estilos
-    |-- /scripts
-    |-- /fontes
+        |-- /dica
+        |-- /estabelecimento
+        |-- /evento
+        |-- /produto
+        |-- /usuario
+        |-- animacoes.css
+        |-- bootstrap-icons.css
+        |-- geral.css
+        |-- index.css
+
+    |-- /evento
+        |-- adicionar.php
+        |-- detalhe.php
+        |-- index.php
+        
+    |-- /fonts
     |-- /imagens
-    |-- /videos
-    |-- /estilos
     |-- /modelos
         |-- usuario.php
         |-- produto.php
         |-- fazenda.php
-        
+
+    |-- /produto
+        |-- adicionar.php
+        |-- detalhe.php
+        |-- index.php
+
     |-- /usuario
+        |-- configuracoes.php
         |-- entrar.php
             |-- Formulário de Login com opções de continuar com o google e Facebook 
             |-- Opção de recuperar a senha com confirmação no email
@@ -19,47 +55,6 @@
             
         |-- sair.php
         |-- perfil.php
-            |-- Para usuário apenas informações básicas 
-            |-- Para fazendeiro terá os dados dele, lista de suas fazendas e opção de adicionar nova fazenda que irá para a página(../fazenda/adicionar.php)
-        
-    |-- /produto
-        |-- index.php => Listagem de todos eos produtos e filtros 
-        |-- detalhes.php
-        |-- adicionar.php
-            |-- Nome
-            |-- Categoria 
-            |-- Foto principal e outras fotos
-            |-- Época de disponibilidade, ex: janeiro, fevereiro, março 
-        
-    |-- /fazenda
-        |-- index.php => Lista de todas as fazendas do sistema
-        |-- detalhes.php
-        |-- adicionar.php
-            |-- Nome
-            |-- Localização 
-                |-- Provincia
-                |-- Município 
-                |-- Ponto no mapa
-                
-            |-- Contactos
-                |-- Telefone 
-                |-- Email
-                |-- WhatsApp 
-            
-            |-- Foto ou logo da fazenda e fotos das propriedades e produtos 
-            |-- Descrição,  História ou Motivação 
-            
-        |-- gerirFazenda.php
-            |-- Total de produtos 
-            |-- Total de visitas
-            |-- Gerir produtos, Irá para 
-            
-    |-- /Admin
-        |-- index.php => Com dashboard e dados da plataforma 
-        |-- usuarios.php
-        |-- produtos.php
-        |-- fazendas.php
-        |-- categorias.php
         
     |-- /contacto
         |-- index.php => Pagina de sobre nos

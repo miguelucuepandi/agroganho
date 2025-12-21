@@ -451,7 +451,7 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
 }
 
 .cardModelo1 div.informacoes h2{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .cardModelo1 div.informacoes p {
@@ -508,11 +508,12 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
     padding: 15px;
     box-shadow: none;
     border-left: 3px solid var(--cor1);
-    max-width: 470px;
+    max-width: 460px;
 }
 
 .listaCardModelo1.listaDica .cardModelo1 h2 {
     margin: 10px 0;
+    font-size: 22px;
 }
 
 .listaCardModelo1.listaDica .cardModelo1.dica div.texto p {
@@ -520,7 +521,7 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
     height: auto;
     min-height: 140px;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .listaCardModelo1.listaDica .cardModelo1.dica.limita div.texto p {
@@ -530,6 +531,7 @@ section#right div#listaSessoes section#inicio section.destaque div.top a {
 .listaCardModelo1.listaDica .cardModelo1 div.texto a {
     color: var(--cor1);
     font-weight: bold;
+    font-size: 18px;
 }
 
 @media (max-width: 800px) {
