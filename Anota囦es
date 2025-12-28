@@ -1,0 +1,23 @@
+1-Modificar os cards de produtos;-> Miguel
+2-Modificar os cards de Estabelecimentos;-> Eloime
+3-Fazer o footer da plataforma;-> Miguel;
+4-colocar a barra de pesquisa no centro do header;-> Miguel;
+5-Criar uma página de resultados para as pesquisas;-> Miguel;
+6-Colocar textos nas sessões Top de todas as páginas;-> Eloime;
+7-Melhorar a página de detalhes de produtos;-> Eloime;
+8-Colocar os dados do autor da dica no card da dica, com o link para levar ao perfil dele;-> Miguel;
+9-Colocar cards de eventos em destaque;-> Eloime;
+10-Colocar opções de editar e remover para os cards de dicas;-> Miguel;
+11-Criar a página de adm;-> Eloime;
+12-Adicionar a opção de colocar o preço e a categoria do produto;-> Miguel.
+13-Juntar e modificar a página principal do projeto;
+14- Colocar a tela de Login;
+
+
+
+mexi no:
+index.html => mexi na session#produtosEmDestaque, refiz o footer, form de pesquisa
+geral.css => acrescentei um bloco de estilos para produtos, refiz o footer, form de pesquisa
+produto/index.html => mudei tudo
+usuario/perfil.html => mexi os cards de produtos 
+

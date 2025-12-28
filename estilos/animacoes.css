@@ -1,0 +1,25 @@
+/*
+    Configuração de todas as animações 
+*/
+
+@keyframes crescer {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes mover {
+    0%{
+     transform: translateY(0);   
+    }
+    50%{
+     transform: translateY(30px);   
+    }
+    100%{
+     transform: translateY(0);   
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/animacoes.css">
+    <link rel="stylesheet" href="../estilos/produto/adicionar.css">
+    <title>AgroGanho</title>
+</head>
+<body>
+    <div id="Loading">
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+    </div>
+    <div class="tudo">
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="imagem">
+                        <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo" />
+                    </div>
+                    <span>AgroGanho</span>
+                </a>
+            </div>
+            <div class="itens">
+                <a id="btnVoltar" href="../usuario/perfil.html"><i class="bi-arrow-left "></i> Voltar ao perfil</a>
+            </div>
+        </header>
+        <main>
+            <section id="top">
+                <div class="icon">
+                    <i class="bi-house"></i>
+                </div>
+                <h1>Adicionar Produto</h1>
+                <p>Cadastre seu produto na plataforma.</p>
+            </section>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <div class="dados">
+                    <h2>Informações básicas</h2>
+                    <p>Forneça as informações exenciais sobre o produto </p>
+                </div>
+                <div class="listaInputs">
+                    <div class="item">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome do estabelecimento" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Tipo de produto</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" selected >Tuberculos</option>
+                            <option value="" >Hortaliças</option>
+                            <option value="" >Sementes</option>
+                            <option value="" >Grãos e seriais</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="nome">Origem do produto</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" selected >Origem não especificada</option>
+                            <option value="" >Fazenda Ucuepandi</option>
+                            <option value="" >Loja VendaMais</option>
+                            <option value="" >Cooperativa Todos ganham</option>
+                        </select>
+                    </div>
+                    <div class="itemFoto">
+            			<label for="foto" id="previewContainer">
+            				 <i class="bi bi-camera"></i>
+            			</label>
+                        <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
+            		</div>
+                    <div class="item">
+                        <button type="submit" id="btnCadastro">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        
+    </div>
+    <script src="../scripts/previsualizacao.js"></script>
+    <script src="../scripts/geral.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

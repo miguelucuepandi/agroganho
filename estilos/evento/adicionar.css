@@ -1,0 +1,179 @@
+/*
+    Estilo específico de adicionar evento
+*/
+div.tudo {
+  flex-direction: column;
+}
+
+header {
+    box-shadow: 0 0 5px #cdc;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+}
+
+  header h2 a{
+    font-size: 20px;
+    color: var(--cor5);
+}
+
+  header div.logo {
+    display: block;
+}
+  header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--cor1);
+}
+  header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+  header div.logo a span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+  header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div.itens a#btnVoltar {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--cor1);
+}
+
+main {
+  margin: 80px auto 10px auto;
+  width: 97%;
+}
+
+main > section {
+  margin: 10px auto;
+}
+
+main section#top {
+  text-align: center;
+}
+
+main section#top div.icon i {
+  background-color: var(--cor1);
+  color: #fff;
+  font-size: 35px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+main section#top h1 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+}
+
+main form {
+  margin: 10px auto;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+main form div.dados h2 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+main form div.dados p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+main form div.listaInputs div.item {
+  margin: 20px 0;
+}
+
+main form div.listaInputs div.item label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+main form div.listaInputs div.item input,
+main form div.listaInputs div.item select,
+main form div.listaInputs div.item textarea,
+main form div.listaInputs div.item button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline-color: var(--cor1);
+  border: 1px solid var(--cor5);
+}
+
+main form div.listaInputs div.item textarea {
+  height: 200px;
+}
+
+main form div.listaInputs div.itemFoto {
+  text-align: center;
+}
+
+main form div.listaInputs div.itemFoto label {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--cor9);
+  overflow: hidden;
+  border-radius: 10px;
+}
+main form div.listaInputs div.itemFoto img {
+  height: 100%;
+  width: 100%;
+}
+main form div.listaInputs div.itemFoto input {
+  display: none;
+}
+
+main form div.listaInputs div.item button {
+  background-color: var(--cor1);
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 1;
+}
+
+main form div.listaInputs div.item button:hover {
+  transform: scale(0.9);
+}
+
+body.dark main form div.dados h2,
+body.dark main form div.dados p,
+body.dark main form div.listaInputs div.item label,
+body.dark main form div.listaInputs div.itemFoto label {
+  color: var(--cor5);
+}

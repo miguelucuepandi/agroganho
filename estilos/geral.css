@@ -1,0 +1,912 @@
+/*
+    Estilo e configuração Geral de todas as paginas
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    /* Cores Principais - Verde */
+    --cor1: #2d874e;  /* Verde principal */
+    --cor2: #48bb78;  /* Verde claro/secundário */
+    --cor3: #f0fdf4;  /* Verde muito claro (fundo) */
+    --cor4: #dcfce7;  /* Verde pastel */
+    
+    /* Cores de Texto */
+    --cor5: #2d3748;  /* Texto escuro principal */
+    --cor6: #4a5568;  /* Texto médio */
+    --cor7: #718096;  /* Texto claro/secundário */
+    --cor8: #cbd5e0;  /* Texto muito claro (footer) */
+    
+    /* Cores de Fundo */
+    --cor9: #f5f7fa;  /* Fundo geral da página */
+    --cor10: #ffffff; /* Branco puro */
+    --cor11: #f7fafc;  /* Branco acinzentado */
+    --cor12: #edf2f7;  /* Cinza muito claro */
+    
+    /* Cores de Borda */
+    --cor13: #e2e8f0; /* Borda cinza claro */
+    
+    /* Cor de Destaque/Alerta */
+    --cor14: #e53e3e; /* Vermelho (badge notificação) */
+    
+    /* Gradientes (componentes) */
+    --gradient1: linear-gradient(135deg, #2d874e 0%, #48bb78 100%);
+    --gradient2: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+body {
+    background-color: var(--cor12);
+}
+
+div#Loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+div#Loading div.bolinha{
+    background-color: rgb(26, 129, 86);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    animation: mover 0.7s ease-in-out infinite;
+}
+div#Loading div.bolinha:nth-child(1){
+ animation-delay: 0;   
+}
+div#Loading div.bolinha:nth-child(2){
+ animation-delay: 0.2s;   
+}
+div#Loading div.bolinha:nth-child(3){
+ animation-delay: 0.4s;   
+}
+
+div.tudo {
+	display: none;
+}
+
+
+section#left {
+    background-color: var(--cor10);
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0 0 5px #ddd;
+    padding: 0.5% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17%;
+    z-index: 10;
+}
+
+section#left div.cima div.logo {
+    margin: 0 0 50px 0;
+}
+section#left div.cima div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section#left div.cima div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+section#left div.cima div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#left div.cima div.logo a span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+section#left div.cima nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section#left div.cima nav ul li a,
+section#left div.baixo ul li a {
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+    gap: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: .2s;
+    font-size: 15px;
+}
+
+section#left div.cima nav ul li a.ativo,
+section#left div.cima nav ul li a:hover {
+    background-color: var(--cor2);
+    color: #fff;
+}
+
+section#right {
+    margin-left: 17%;
+    width: 100%;
+}
+
+section#right header {
+    /* box-shadow: 0 0 5px #cdc; */
+    width: 84%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+}
+
+section#right header h2{
+    font-size: 25px;
+    color: var(--cor5);
+    display: none;
+}
+
+section#right header form {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+section#right header form input {
+    border: 1px solid var(--cor1);
+    padding: 10px;
+    border-radius: 8px;
+    outline-color: var(--cor1);
+}
+section#right header form button {
+    background-color: transparent;
+    color: var(--cor1);
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+section#right header div.logo {
+    display: none;
+}
+section#right header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section#right header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+section#right header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#right header div.logo a span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+section#right header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section#right header div.itens a#btnPesq,
+section#right header div.itens button#btnTema,
+section#right header div.itens div.person div.imagem{
+    font-size: 28px;
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#right header div.itens a#btnPesq {
+    display: none;
+}
+section#right header div.itens div.person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section#right header div.itens div.person div.imagem a {
+    height: 100%;
+    width: 100%;
+}
+
+section#right header div.itens div.person div.imagem a img {
+    height: 100%;
+    width: 100%;
+}
+
+section#right header div.itens button#btnMenu{
+    height: 50px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    background-color: transparent;
+    display: none;
+}
+section#right header div.itens button#btnMenu span.linha{
+    height: 4px;
+    width: 100%;
+    background-color: var(--cor5);
+    display: block;
+    margin: 6px auto;
+    position: relative;
+    transform-origin: center;
+}
+section#right header div.itens button.ativar span.linha:nth-child(2){
+    visibility: hidden;
+}
+section#right header div.itens button.ativar span.linha:nth-child(1){
+    transform: translateY(9px) rotate(-42deg);
+    transition: 0.2s;
+}
+section#right header div.itens button.ativar span.linha:nth-child(3){
+    transform: translateY(-11px) rotate(42deg);
+    transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+    section#left {
+        width: 50%;
+        z-index: 10;
+        left: -100%;
+        transition: 0.3s ease-in-out;
+    }
+    
+    section#left.abrir {
+        left: 0%;
+    }
+
+    section#right {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    section#right header {
+        width: 100%;
+    }
+    
+    section#right header h2 {
+        display: none;
+    }
+    
+    section#right header div.logo {
+        display: block;
+    }
+    
+    section#right header div.itens button#btnMenu{
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    section#right header form {
+        display: none;
+    }
+    section#right header div.itens a#btnPesq {
+        display: flex;
+    }
+    section#right header div.logo a span,
+    section#right header div.itens div.person div.info,
+    section#right header div.itens div.person div.btn {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    section#left {
+        width: 60%;
+    }
+    
+    section#left div.cima div.logo a span {
+        font-size: 5px;
+        color: red;
+    }
+    section#left div.cima nav ul li a,
+    section#left div.baixo ul li a {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    section#right header div.itens a#btnPesq,
+    section#right header div.itens button#btnTema,
+    section#right header div.itens div.person div.imagem{
+        font-size: 25px;
+        height: 45px;
+        width: 45px;
+    }
+}
+
+section#right div#listaSessoes {
+    margin: 100px 0 0 0;
+}
+
+section#right div#listaSessoes section#inicio {
+    width: 95%;
+    margin: 20px auto;
+}
+
+section#right div#listaSessoes section#inicio section#top {
+    background: var(--gradient1);
+    border-radius: 15px;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+section#right div#listaSessoes section#inicio section#top h1 {
+    font-size: 32px;
+}
+
+section#right div#listaSessoes section#inicio section#top p {
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+    width: 80%;
+}
+
+section#right div#listaSessoes section#inicio section#top a {
+    color: var(--cor1);
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: auto;
+}
+
+section#right div#listaSessoes section#inicio section.destaque {
+    padding: 3% 0;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
+    font-size: 35px;
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top div p {
+    font-size: 20px;
+
+}
+
+section#right div#listaSessoes section#inicio section.destaque div.top a {
+    color: var(--cor1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    section#right div#listaSessoes section#inicio {
+        width: 97%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 700px) {
+    section#right div#listaSessoes section#inicio section.destaque {
+        padding: 3% 2%;
+    }
+    section#right div#listaSessoes section#inicio section.destaque div.top div h1 {
+        font-size: 28px;
+    }
+    
+    section#right div#listaSessoes section#inicio section.destaque div.top div p {
+        font-size: 15px;
+        width: 90%;
+    }
+    section#right div#listaSessoes section#inicio section.destaque div.top a {
+        font-size: 17px;
+    }
+}
+
+
+/*
+    Configuração do card - Modelo 1
+*/
+
+.listaCardModelo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 50px 0 0 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.cardModelo1 {
+    animation: crescer 0.5s ease-in-out forwards;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.cardModelo1 div.imagem {
+    width: 100%;
+    height: 220px;
+}
+
+.cardModelo1 div.imagem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardModelo1 div.informacoes {
+    padding: 20px;
+}
+
+.cardModelo1 div.informacoes h2{
+    font-size: 22px;
+}
+
+.cardModelo1 div.informacoes p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+.cardModelo1 div.informacoes p a {
+    color: #333;
+}
+
+.cardModelo1 div.botoes {
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.cardModelo1 div.botoes a {
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .cardModelo1 {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 750px) {
+    .cardModelo1 {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardModelo1 div.botoes a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}
+
+/*
+    Card de dicas
+*/
+
+.listaCardModelo1.listaDica {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.dica {
+    padding: 15px;
+    box-shadow: none;
+    border-left: 3px solid var(--cor1);
+    max-width: 460px;
+}
+
+div.dica h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+div.dica div.texto p {
+    margin: 10px 0;
+    height: auto;
+    min-height: 140px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div.dica.limita div.texto p {
+    height: 140px;
+}
+
+div div.texto a {
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.dica .person {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+div.dica .person img {
+    height: 35px;
+    width: 35px;
+    border: 1.5px solid var(--cor1);
+    border-radius: 5px;
+}
+
+div.dica .person h2 {
+    font-size: 15px;
+    color: #000;
+    margin: 0;
+}
+
+
+@media (max-width: 800px) {
+    div.dica {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 750px) {
+    div.dica {
+        max-width: 650px;
+    }
+}
+
+/*
+    Card de eventos
+*/
+
+.listaCardModelo1.listaEvento div.cardModelo1 {
+    position: relative;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.imagem {
+    height: 200px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes h2 {
+    margin: 10px 0 12px 0;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.icon {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 3px 5px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.info h3 {
+    font-size: 15px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data {
+    background-color: var(--cor3);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--cor13);
+    padding: 10px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.dia {
+    color: var(--cor1);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.mes {
+    color: var(--cor5);
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.tipo p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--cor1);
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+/*
+    Cards de produtos
+*/
+.cardProduto {
+    position: relative;
+}
+.cardProduto div.informacoes {
+    padding: 10px 8px 10px 8px;
+    margin: 5px 0;
+}
+
+.cardProduto div.informacoes h2{
+    font-size: 18px;
+}
+.cardProduto div.informacoes p {
+    font-size: 15px;
+    
+}
+.cardProduto div.preco {
+    display: flex;
+    gap: 5px;
+    color: var(--cor1);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+.cardProduto div.flutua {
+    padding: 5px 8px;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    background-color: var(--cor1);
+    border-radius: 5px;
+}
+
+.cardProduto div.flutua p {
+    font-size: 14px;
+}
+
+.cardProduto div.btn {
+    padding: 0 10px 10px 10px;
+    text-align: right;
+}
+.cardProduto div.btn a {
+    color: var(--cor1);
+    font-size: 18px;
+    font-weight: bold;
+}
+/*
+    Filtro
+*/
+
+section#right div#listaSessoes section#inicio section#filtro {
+    text-align: center;
+    padding-top: 50px;
+    color: var(--cor5);
+}
+
+section#right div#listaSessoes section#inicio section#filtro > h2 {
+    color: var(--cor5);
+}
+
+section#right div#listaSessoes section#inicio section#filtro > p {
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes {
+    width: 98%;
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button {
+    padding: 7px 15px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button:hover,
+section#right div#listaSessoes section#inicio section#filtro aside.botoes button.ativo {
+    background-color: var(--cor1);
+    color: #fff;
+    transform: scale(1.01);
+}
+
+/*
+    Estilo para os Textos que transbordam 
+*/
+
+.textoUmaLinha{
+    width: 100%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*
+    <!--------------------Início do footer------------------>
+*/
+footer {
+    width: 100%;
+	background-color: var(--cor5);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
+	padding: 60px 0 0 0;
+    transition: all 0.3s ease-in-out;
+    border-top: 2px solid #83838A;
+}
+
+footer section {
+	width: 24%;
+	color: #fff;
+	padding: 10px;
+}
+footer section h2 {
+	font-size: 22px;
+	margin: 10px 0;
+}
+footer section p,
+footer section a {
+	font-size: 16px;
+	margin: 8px 0;
+	display: block;
+	text-decoration: none;
+	color: #ddd;
+}
+footer section p:hover,
+footer section a:hover {
+    color: var(--cor9);
+}
+
+footer section div.top {
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	gap: 5px;
+}
+footer section div.top img{
+	height: 50px;
+	width: 50px;
+}
+footer section div.redes {
+	display: flex;
+	gap: 10px;
+}
+footer section div.redes a {
+    font-size: 25px;
+}
+footer section#copy {
+	width: 100%;
+	text-align: center;
+	margin: 30px 0 0 0;
+	padding: 20px 5px 20px 5px;
+	border-top: 1px solid var(--cor6);
+}
+
+@media (max-width: 670px) {
+    footer {
+        justify-content: space-between;
+    }
+    footer section {
+    	width: 45%;
+    }
+	footer section#copy{
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	footer section {
+		width: 95%;
+	}
+	footer section#copy {
+		font-size: 15px;
+	}
+}
+
+/*
+    Modo Dark 
+*/
+
+
+body.dark,
+body.dark section#left,
+body.dark section#left div.cima nav ul li a,
+body.dark section#left div.baixo ul li a,
+body.dark section#right header,
+body.dark section#right header h2 a
+{
+    background-color: var(--cor5);
+    color: var(--cor11);
+}
+
+body.dark section#left div.cima nav ul li a.ativo,
+body.dark section#left div.cima nav ul li a:hover {
+    background-color: var(--cor2);
+    color: var(--cor11);
+}
+
+body.dark section#right header div.itens button#btnMenu span.linha{
+    background-color: #fff;
+}
+
+body.dark .cardModelo1 {
+    box-shadow: 0 0 8px #ccc;
+    background-color: var(--cor5);
+    color: var(--cor11);
+}
+
+body.dark section#left div.cima div.logo a span,
+body.dark section#right header div.logo a span,
+body.dark .cardModelo1 div.informacoes p a,
+body.dark section#right div#listaSessoes section#inicio section.destaque div.top a,
+body.dark section#right div#listaSessoes section#inicio section#filtro > h2,
+body.dark section#right div#listaSessoes section#inicio section#filtro > p {
+    color: var(--cor11);
+}
+
+body.dark div.dica {
+    border-color: var(--cor2);
+}
+
+body.dark div.dica div.texto a {
+    color: var(--cor2);
+}

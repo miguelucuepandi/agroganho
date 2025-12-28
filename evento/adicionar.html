@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/animacoes.css">
+    <link rel="stylesheet" href="../estilos/evento/adicionar.css">
+    <title>AgroGanho</title>
+</head>
+<body>
+    <div id="Loading">
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+    </div>
+    <div class="tudo">
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="imagem">
+                        <img src="../imagens/icones/AgroLink-Logo.png" alt="Logo" />
+                    </div>
+                    <span>AgroGanho</span>
+                </a>
+            </div>
+            <div class="itens">
+                <a id="btnVoltar" href="../usuario/perfil.html"><i class="bi-arrow-left "></i> Voltar ao perfil</a>
+            </div>
+        </header>
+        <main>
+            <section id="top">
+                <div class="icon">
+                    <i class="bi-calendar-date-fill"></i>
+                </div>
+                <h1>Adicionar Evento</h1>
+                <p>Cadastre seu evento na plataforma.</p>
+            </section>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <div class="dados">
+                    <h2>Informações básicas</h2>
+                    <p>Forneça as informações exenciais sobre o evento </p>
+                </div>
+                <div class="listaInputs">
+                    <div class="item">
+                        <label for="nome">Titulo do evento</label>
+                        <input type="text" name="titulo" id="titulo" placeholder="Título do evento" />
+                    </div>
+                    <div class="item">
+                        <label for="local">Local do evento</label>
+                        <input type="text" name="local" id="local" placeholder="Local do evento" />
+                    </div>
+                    <div class="item">
+                        <label for="organizador">Organizador do evento</label>
+                        <input type="text" name="organizador" id="organizador" placeholder="Organizador do evento" />
+                    </div>
+                    <div class="item">
+                        <label for="nome">Tipo de evento</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" selected >Feira</option>
+                            <option value="" >Workshop</option>
+                            <option value="" >Treinamentos</option>
+                            <option value="" >Conferências</option>
+                            <option value="" >Seminário</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="dataInicio">Data de realização do evento</label>
+                        <input type="date" name="dataInicio" id="dataInicio">
+                    </div>
+                    <div class="item">
+                        <label for="horaInicio">Hora de início do evento</label>
+                        <input type="time" name="horaInicio" id="horaInicio" value="" />
+                    </div>
+                    <div class="item">
+                        <label for="horaFim">Hora de Fim do evento</label>
+                        <input type="time" name="horaFim" id="horaFim" value="" />
+                    </div>
+                    <div class="itemFoto">
+            			<label for="foto" id="previewContainer">
+            				 <i class="bi bi-camera"></i>
+            			</label>
+                        <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
+            		</div>
+                    <div class="item">
+                        <button type="submit" id="btnCadastro">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        
+    </div>
+    <script src="../scripts/previsualizacao.js"></script>
+    <script src="../scripts/geral.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
