@@ -866,7 +866,6 @@ footer section#copy {
     Modo Dark 
 */
 
-
 body.dark,
 body.dark section#left,
 body.dark section#left div.cima nav ul li a,
@@ -889,7 +888,7 @@ body.dark section#right header div.itens button#btnMenu span.linha{
 }
 
 body.dark .cardModelo1 {
-    box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 6px #ccc;
     background-color: var(--cor5);
     color: var(--cor11);
 }
@@ -904,9 +903,15 @@ body.dark section#right div#listaSessoes section#inicio section#filtro > p {
 }
 
 body.dark div.dica {
-    border-color: var(--cor2);
+    border-color: var(--cor2); /* Verde claro */
 }
 
+body.dark .cardProduto div.preco,
+body.dark .cardProduto div.btn a,
 body.dark div.dica div.texto a {
-    color: var(--cor2);
+    color: var(--cor2); /* Verde claro */
+}
+
+body.dark div.dica h2 {
+    color: #fff;
 }
