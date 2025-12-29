@@ -1,7 +1,10 @@
 /*
-    Limite do texto para os cards de Dica
+    Configuração geral
 */
 
+/*
+    Limite do texto para os cards de Dica
+*/
 const containerTexto = [...document.querySelectorAll("div.dica")]
 const lerMais = [...document.querySelectorAll(".lerMais")]
 const limite = 100;

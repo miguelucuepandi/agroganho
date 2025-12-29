@@ -1,3 +1,7 @@
+/*
+    Neste filtro tem a opção de mostrar todos
+*/
+
 let botoes = document.querySelectorAll("section#filtro aside.botoes button");
 let itens = document.querySelectorAll("section#filtro aside.itens div.item");
 

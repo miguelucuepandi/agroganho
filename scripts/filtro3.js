@@ -1,6 +1,7 @@
 /*
-    Neste filtro não tem a opção de mostrar todos, e o botão é guardado no localStorage
+    Neste filtro não tem a opção de mostrar todos, e o botão não é guardado no localStorage
 */
+
 
 let botoes = document.querySelectorAll("section#filtro aside.botoes button");
 let itens = document.querySelectorAll("section#filtro aside.itens div.item");
@@ -24,27 +25,12 @@ function mostrarItem(valorBtn) {
     itens.forEach(item => {
         let valorItem = item.getAttribute("valor")
         if (valorBtn == valorItem) {
-            item.style.display = "block"
+            item.style.display = "flex"
         }
         else {
             item.style.display = "none"
         }
     })
-}
-
-function botoesIniciais() {
-    if (localStorage.valorBtn) {
-        removerAtivoBtn()
-        botoes.forEach(botao => {
-            let valorBtn = botao.getAttribute("valor")
-            if (valorBtn == localStorage.valorBtn) {
-                botao.classList.add("ativo")
-            }
-        })
-        mostrarItem(localStorage.valorBtn)
-    } else {
-        mostrarItemInicial()
-    }
 }
 
 botoes.forEach(botao => {
@@ -58,4 +44,4 @@ botoes.forEach(botao => {
     })
 })
 
-botoesIniciais()
+mostrarItemInicial()

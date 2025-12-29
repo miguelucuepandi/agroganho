@@ -36,8 +36,7 @@ header {
     overflow: hidden;
     height: 45px;
     width: 45px;
-    border: 2px solid var(--cor1);
-}
+  }
   header div.logo div.imagem img {
     height: 100%;
     width: 100%;

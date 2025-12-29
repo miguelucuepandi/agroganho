@@ -1,0 +1,277 @@
+/*
+    Estilo específico de detalhes do perfil do usuário 
+*/
+
+div.tudo {
+  flex-direction: column;
+}
+
+header {
+    box-shadow: 0 0 5px #cdc;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+}
+
+  header h2 a{
+    font-size: 20px;
+    color: var(--cor5);
+}
+
+  header div.logo {
+    display: block;
+}
+  header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 45px;
+    width: 45px;
+}
+  header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+  header div.logo a span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+  header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div.itens a#btnVoltar {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--cor1);
+}
+
+main {
+  margin: 80px 0 10px 0;
+}
+
+main > section {
+  width: 97%;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+main section#top {
+  background: var(--gradient1);
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+
+main section#top div.left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main section#top div.left div.imagem {
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main section#top div.left div.imagem img {
+  height: 100%;
+  width: 100%;
+}
+
+main section#top div.left div.informacoes {
+  color: #fff;
+}
+
+main section#top div.left div.informacoes h3{
+  margin: 10px 0;
+}
+
+main section#top div.left div.informacoes div.dados {
+  display: flex;
+  gap: 10px;
+  margin: 50px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+main section#top div.left div.informacoes div.dados div.item{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main section#top div.left div.informacoes div.dados div.item strong {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  main section#top div.left {
+    justify-content: center;
+  }
+  main section#ctas a.item {
+    width: 100%;
+  }
+}
+
+main section#outrasSessoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+main section#outrasSessoes section#right {
+  font-size: 25px;
+  width: 100%;
+  margin: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+main section#outrasSessoes section#right section#filtro {
+  color: var(--cor5);
+  padding: 0;
+}
+
+main section#outrasSessoes section#right section#filtro aside.botoes {
+    position: sticky;
+    top: 73px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+main section#outrasSessoes section#right section#filtro aside.botoes button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    transition: 0.2s;
+    background-color: transparent;
+    width: 24%;
+}
+
+main section#outrasSessoes section#right section#filtro aside.botoes button:hover,
+main section#outrasSessoes section#right section#filtro aside.botoes button.ativo {
+    background-color: var(--cor1);
+    color: #fff;
+    transform: scale(1.01);
+}
+
+main section#outrasSessoes section#right section#filtro aside.itens {
+  width: 100%;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+main section#outrasSessoes section#right section#filtro aside.itens div.cima {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 10px 0;
+}
+
+main section#outrasSessoes section#right section#filtro aside.itens div.cima h2 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+main section#outrasSessoes section#right section#filtro aside.itens div.cima a {
+  background-color: var(--cor1);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+main section#outrasSessoes section#right section#filtro aside.itens div.baixo {
+  padding: 30px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  main section#outrasSessoes section#right section#filtro aside.itens div.cima h2 {
+    font-size: 20px;
+  }
+  
+  main section#outrasSessoes section#right section#filtro aside.itens div.cima a {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  main section#outrasSessoes section#right section#filtro aside.itens div.baixo {
+    justify-content: center;
+  }
+  main section#outrasSessoes section#right section#filtro aside.botoes {
+      box-shadow: 0 0 10px #ccc;
+      justify-content: space-around;
+    }
+  main section#outrasSessoes section#right section#filtro aside.botoes button {
+      padding: 10px;
+      font-size: 16px;
+      width: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+  main section#outrasSessoes {
+    flex-wrap: wrap;
+  }
+  main section#outrasSessoes section#right section#filtro aside.botoes {
+    top: 70px;
+  }
+  main section#outrasSessoes section#right section#filtro aside.itens {
+    padding: 5px;
+  }
+}
+
+/*
+  Estilo para o modo dark
+*/
+
+body.dark main section#outrasSessoes section#right section#filtro aside.itens {
+  background-color: var(--cor5);
+  color: var(--cor11);
+}
+body.dark main section#outrasSessoes section#left h2 {
+  color: var(--cor1);
+}
+
+body.dark main section#outrasSessoes section#left div.dadosP div.dado strong {
+  color: var(--cor5);
+}

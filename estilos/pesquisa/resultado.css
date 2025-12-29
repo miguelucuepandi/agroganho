@@ -1,0 +1,171 @@
+/*
+    Estilo específico de adicionar produto
+*/
+div.tudo {
+  flex-direction: column;
+}
+
+header {
+    box-shadow: 0 0 5px #cdc;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: var(--cor10);
+    z-index: 10;
+    gap: 60px;
+}
+
+  header h2 a{
+    font-size: 20px;
+    color: var(--cor5);
+}
+
+  header div.logo {
+    display: block;
+}
+  header div.logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  header div.logo div.imagem {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+}
+  header div.logo div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+header div.logo a span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+}
+
+header form input {
+    border: 2px solid var(--cor1);
+    padding: 10px;
+    border-radius: 8px;
+    outline-color: var(--cor1);
+    width: 100%;
+    height: 45px;
+}
+header form button {
+    background-color: var(--cor1);
+    color: var(--cor1);
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 10%;
+    padding: 6px 10px;
+    border-radius: 7px;
+}
+
+  header div.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div.itens a#btnVoltar {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--cor1);
+}
+
+@media (max-width: 600px){
+  header {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  header form {
+    width: 100%;
+  }
+}
+
+main {
+  margin: 120px auto 10px auto;
+  width: 90%;
+}
+
+main > section {
+  margin: 10px auto;
+}
+/*
+    Filtro
+*/
+
+main section#filtro aside.botoes {
+  width: 98%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+main section#filtro aside.botoes button {
+  padding: 7px 5px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 2px;
+  transition: 0.2s;
+  background-color: transparent;
+  color: #000;
+}
+
+main section#filtro aside.botoes button span {
+  background-color: var(--cor1);
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+
+main section#filtro aside.botoes button:hover,
+main section#filtro aside.botoes button.ativo {
+  border-bottom: 2px solid var(--cor1);
+  color: var(--cor1);
+  transform: scale(1.01);
+  font-weight: bold;
+}
+
+.listaCardModelo1 {
+  margin: 0;
+}
+
+@media (max-width: 600px){
+  main {
+    margin: 150px auto 10px auto;
+  }
+}
+
+body.dark main section#filtro aside.botoes button {
+  color: #ddd;
+}
+
+body.dark main section#filtro aside.botoes button:hover,
+body.dark main section#filtro aside.botoes button.ativo {
+  border-bottom: 2px solid var(--cor2);
+  color: var(--cor2);
+}

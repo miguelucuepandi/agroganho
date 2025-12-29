@@ -31,6 +31,7 @@ Extrututa de pastas e arquivos da AgroGanho
         |-- /dica
         |-- /estabelecimento
         |-- /evento
+        |-- /pesquisa
         |-- /produto
         |-- /usuario
         |-- animacoes.css
@@ -58,11 +59,8 @@ Extrututa de pastas e arquivos da AgroGanho
     |-- /usuario
         |-- configuracoes.php
         |-- entrar.php
-            |-- Formulário de Login com opções de continuar com o google e Facebook 
-            |-- Opção de recuperar a senha com confirmação no email
-            |-- Formulário de cadastro com opções de continuar com o Google e Facebook 
-            
+        |-- detalhes.php
         |-- sair.php
         |-- perfil.php
         
-    |-- index.php => Página inicial: listagem de produtos, fazendas, testemunhos, etc
+    |-- index.php => Página inicial: listagem de produtos, estabelecimentos, eventos e dicas
