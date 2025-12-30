@@ -45,7 +45,7 @@
                 <div class="listaInputs">
                     <div class="item">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome do estabelecimento" />
+                        <input type="text" name="nome" id="nome" placeholder="Nome do estabelecimento" maxlength="400" />
                     </div>
                     <div class="item">
                         <label for="nome">Tipo de produto</label>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="item">
                         <label for="preco">Preço do produto (AOA)</label>
-                        <input type="number" name="preco" id="preco" value="0" step=".01" />
+                        <input type="number" name="preco" id="preco" value="0" step=".01" maxlength="40" />
                         <p>_</p>
                         <select name="unidade" id="unidade">
                             <option value="" selected>Unidade</option>
@@ -82,7 +82,7 @@
                         <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
             		</div>
                     <div class="item">
-                        <button type="submit" id="btnCadastro">Cadastrar</button>
+                        <button type="submit" id="btnCadastro" name="btnCadastro">Cadastrar</button>
                     </div>
                 </div>
             </form>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/usuario/entrar.css">
+    <link rel="stylesheet" href="../estilos/bootstrap-icons.css">
+    <title>AgroGanho</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form" method="post">
+                    <h2 class="title">Entrar</h2>
+                    <div class="input-field">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" placeholder="Usuario" name="email" maxlength="200" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" placeholder="Senha" name="senha" maxlength="200" required >
+                    </div>
+                    <input type="submit" name="btnEntrar" value="Entrar" class="btn solid">
+
+                    <p class="social-text">Ou entre com as plataformas</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-google"></i>
+                        </a>
+                      
+                    </div>
+                </form>
+
+                <!-- formulario de cadastro  -->
+                <form action="" class="sign-up-form" method="post">
+                    <h2 class="title">Cadastro</h2>
+                    <div class="input-field">
+                        <i class="bi bi-person-fill"></i>
+                        <input type="text" placeholder="Nome completo" name="nome" maxlength="290" required >
+                    </div>
+                    <div class="input-field">
+                        <i class="bi bi-telephone-fill"></i>
+                        <input type="text" placeholder="Telefone" name="telefone" maxlength="15" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="text" placeholder="Email" name="email" maxlength="200" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" placeholder="Senha" name="senha" maxlength="200" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" placeholder="Confirme a Senha" name="confSenha" maxlength="200" required>
+                    </div>
+                    <input type="submit" value="Cadastro" class="btn solid" name="btnCadastro">
+
+                    <p class="social-text">Ou Cadastre-se com as plataformas </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Cadastre-se!</h3>
+                    <p>Seja bem-vindo! Crie sua conta e tenha acesso a conteudo exclusivos, ferramentas persolizadas e muito mais.  O processo é simples e rápido. Faça parte da nossa comunidade agora mesmo!</p>
+                    <button class="btn transparent" id="sign-up-btn">Cadastre-se</button>
+                </div>
+                <img src="../imagens/diversas/work_time_amico.svg" class="image" alt="Imagem">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Entrar!</h3>
+                    <p>Bem-vindo de volta! Estamos felizes em tê-lo aqui novamente. Acesse sua conta para continuar a explorar os nossos recursos, serviços e novidades. Seu proximo passo esta a um clique de distância!</p>
+                    <button class="btn transparent" id="sign-in-btn">Entrar</button>
+                </div>
+                <img src="../imagens/diversas/work_time_amico.svg" class="image" alt="Imagem">
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/entrar.js"></script>
+</body>
+</html>
