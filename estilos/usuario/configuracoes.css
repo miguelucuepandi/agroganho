@@ -36,7 +36,6 @@ header {
     overflow: hidden;
     height: 45px;
     width: 45px;
-    border: 2px solid var(--cor1);
 }
   header div.logo div.imagem img {
     height: 100%;
@@ -136,11 +135,14 @@ main form div.listaInputs div.item textarea {
 
 main form div.listaInputs div.itemFoto {
   text-align: center;
-  
   gap: 10px;
 }
 
-main form div.listaInputs div.itemFoto div.img {
+main form div.listaInputs div.itemFoto a {
+  color: var(--cor5);
+}
+
+main form div.listaInputs div.itemFoto .img {
   width: 200px;
   height: 200px;
   font-size: 80px;
@@ -150,7 +152,7 @@ main form div.listaInputs div.itemFoto div.img {
   background-color: var(--cor9);
   overflow: hidden;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 main form div.listaInputs div.itemFoto img {
   height: 100%;
@@ -171,10 +173,6 @@ main form div.listaInputs div.itemFoto button {
   border-radius: 10px;
   border: none;
   margin: 10px 0;
-}
-
-main form div.listaInputs div.itemFoto button {
-  display: none;
 }
 
 main form div.listaInputs div.item button {
@@ -201,7 +199,7 @@ body.dark main form div.dados h2,
 body.dark main form div.dados p,
 body.dark main form div.listaInputs div.item label,
 body.dark main form div.listaInputs div.itemFoto label,
-body.dark main form div.listaInputs div.itemFoto div.img {
+body.dark main form div.listaInputs div.itemFoto .img {
   color: var(--cor5);
 }
 

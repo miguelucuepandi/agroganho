@@ -615,25 +615,30 @@ div.dica .person h2 {
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.informacoes h2 {
     margin: 10px 0 12px 0;
+    font-size: 22px ;
 }
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 10px 0;
+    margin: 7px 0;
 }
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.icon {
     background-color: var(--cor4);
     color: var(--cor5);
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 20px ;
     padding: 3px 5px;
 }
 
-.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.info h3 {
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.info span {
     font-size: 15px;
+}
+
+.listaCardModelo1.listaEvento div.cardModelo1 div.informacoes div.dados div.info h3 {
+    font-size: 16px;
 }
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.flutua {
@@ -655,17 +660,18 @@ div.dica .person h2 {
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.dia {
     color: var(--cor1);
-    font-size: 25px;
+    font-size: 18px ;
     font-weight: 700;
 }
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.data p.mes {
     color: var(--cor5);
+    font-size: 20px ;
 }
 
 .listaCardModelo1.listaEvento div.cardModelo1 div.flutua div.tipo p {
     color: #fff;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 500;
     background-color: var(--cor1);
     padding: 7px 20px;
@@ -776,6 +782,28 @@ section#right div#listaSessoes section#inicio section#filtro aside.botoes button
     text-wrap: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+div.vazio {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    animation: crescer 0.5s ease-in-out forwards;
+}
+
+div.vazio img {
+    width: 90%;
+    max-width: 200px;
+    color: var(--cor1);
+}
+
+div.vazio h1{
+    font-size: 22px;
+    color: var(--cor1);
+}
+
+div.descricao {
+    width: 100%;
 }
 
 

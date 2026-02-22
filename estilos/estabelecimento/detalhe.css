@@ -36,6 +36,7 @@ section#right div#listaSessoes section#inicio section#top div.imagem a img {
 
 section#right div#listaSessoes section#inicio section#top div.informacoes {
     font-weight: bold;
+    width: calc(100% - 450px);
 }
 
 section#right div#listaSessoes section#inicio section#top div.informacoes h1 {
@@ -49,6 +50,12 @@ section#right div#listaSessoes section#inicio section#top div.informacoes p {
 
 section#right div#listaSessoes section#inicio section#top div.informacoes p a {
     padding: 0;
+}
+
+@media (max-width: 730px) {
+    section#right div#listaSessoes section#inicio section#top div.informacoes {
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {

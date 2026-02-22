@@ -45,13 +45,24 @@
                 </div>
                 <div class="listaInputs">
                     <div class="itemFoto">
-                        <div class="img" for="" id="previewContainer">
+                        <a href="" class="img" id="previewContainer">
                             <i class="bi bi-camera"></i>
-                        </div>
+                        </a>
                         <input type="file" name="foto" id="foto" value="" accept="image*/" onchange="previewImage(event)" />
-                        <button id="btnAlterarFoto">Alterar foto</button>
-                        <label for="foto">Alterar foto</label>
+                        <label for="foto" type="btnActualizarFoto">Alterar Foto</label>
                     </div>
+                    <div class="item">
+                        <button type="submit" id="btnActualizarFoto">Actualizar dados</button>
+                    </div>
+                </div>
+            </form>
+            <form action="" method="post" enctype="multipart/form-data" >
+
+                <div class="dados">
+                    <h2>Informações do perfil</h2>
+                    <p>Configure as informações básicas</p>
+                </div>
+                <div class="listaInputs">
                     <div class="item">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome" />
@@ -65,7 +76,7 @@
                         <input type="text" name="nome" id="nome" placeholder="Localização" />
                     </div>
                     <div class="item">
-                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                        <button type="submit" id="btnActualizarInfoGeral">Actualizar dados</button>
                     </div>
                 </div>
             </form>
@@ -77,16 +88,16 @@
                 </div>
                 <div class="listaInputs">
                     <div class="item">
-                        <label for="telefone">Telefome</label>
+                        <label for="telefone">Telefone</label>
                         <input type="text" name="telefone" id="telefone" placeholder="Telefone" />
                     </div>
                     <div class="item">
                         <label for="nome">Email</label>
-                        <input type="text" name="nome" id="nome" placeholder="Email" />
+                        <input type="text" name="email" id="email" placeholder="Email" />
                     </div>
                     
                     <div class="item">
-                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                        <button type="submit" id="btnActualizarInfoContacto" name="btnActualizarInfoContacto">Actualizar dados</button>
                     </div>
                 </div>
             </form>
@@ -98,21 +109,21 @@
                 <div class="listaInputs">
                     <div class="item">
                         <label for="nome">Senha actual</label>
-                        <input type="text" name="nome" id="nome" placeholder="Senha actual" />
+                        <input type="text" name="senhaVelha" id="senhaVelha" placeholder="Senha actual" />
                     </div>
                     <div class="item">
                         <label for="nome">Nova senha</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nova senha" />
+                        <input type="text" name="senha" id="senha" placeholder="Nova senha" />
                     </div>
                     <div class="item">
                         <label for="nome">Confirme a senha</label>
-                        <input type="text" name="nome" id="nome" placeholder="Confirme a senha" />
+                        <input type="text" name="confSenha" id="confSenha" placeholder="Confirme a senha" />
                     </div>
                     <div class="item">
-                        <button type="submit" id="btnActualizar">Actualizar dados</button>
+                        <button type="submit" id="btnActualizarInfoSeguranca">Actualizar dados</button>
                     </div>
                 </div>
-                <a id="btnEliminarPerfil" href="#">Eliminar Perfil</a>
+                <a id="btnEliminarPerfil" href="?eliminarPerfil=<?php echo $valorUser['id'] ?>" onclick="return confirm('Deseja eliminar seu perfil')">Eliminar Perfil</a>
             </form>
             
         </main>
@@ -157,17 +168,6 @@
 </footer>
     </div>
     <script src="../scripts/previsualizacao.js"></script>
-    <script>
-        const btnEliminarPerfil = document.querySelector("#btnEliminarPerfil") 
-        
-        btnEliminarPerfil.addEventListener("click", (e) => {
-            e.preventDefault()
-            let resp = window.confirm("Comfirme a eliminação da conta")
-            if(resp) {
-                window.location = "../index.html"
-            }
-        })
-    </script>
     <script src="../scripts/geral.js"></script>
 </body>
 </html>
